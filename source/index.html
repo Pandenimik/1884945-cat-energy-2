@@ -26,7 +26,7 @@
             <a class="main-nav__link main-nav__link--current" href="">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="">Подбор программы</a>
@@ -49,7 +49,7 @@
           <source media="(min-width: 768px)" width="709" height="609" srcset="./images/intro/can-tablet.png">
           <img class="intro__img" width="280" height="270" src="./images/intro/can-mobile.png" alt="Банка с кормом Cat Energy">
         </picture>
-        <button class="intro__button button button--primary" type="button">Подобрать программу</button>
+        <a class="intro__button button button--primary" href="">Подобрать программу</a>
       </div>
     </section>
 
@@ -57,19 +57,19 @@
       <div class="container">
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="programs__list">
-          <li class="prorgarms__item">
+          <li class="programs__item">
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programs__link" href="">Каталог slim</a>
+            <a class="programs__link" href="catalog.html">Каталог slim</a>
           </li>
-          <li class="prorgarms__item">
+          <li class="programs__item">
             <h3 class="programs__title">Набор массы</h3>
             <p class="programs__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programs__link" href="">каталог pro</a>
+            <a class="programs__link" href="catalog.html">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -125,24 +125,27 @@
       </div>
     </section>
 
-    <footer class="page-footer">
-      <section class="contacts wrapper wrapper--contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="container">
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        </div>
-      </section>
-      <section class="map wrapper wrapper--map">
-        <h2 class="visually-hidden">Мы на карте</h2>
-        <!-- Потом здесь будет карта -->
-        <picture class="map__picture">
-          <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
-          <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
-          <img class="map__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
-        </picture>
-      </section>
-      <div class="bottom">
+  </main>
+
+  <footer class="page-footer">
+    <section class="contacts wrapper wrapper--contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="container">
+        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+    </section>
+    <section class="map wrapper wrapper--map">
+      <h2 class="visually-hidden">Мы на карте</h2>
+      <!-- Потом здесь будет карта -->
+      <picture class="map__picture">
+        <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
+        <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
+        <img class="map__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
+      </picture>
+    </section>
+    <div class="bottom wrapper wrapper--bottom">
+      <div class="container">
         <a class="bottom__link" href="index.html">
           <img class="bottom__logo" src="./images/logos/footer-logo.svg" alt="Логотип CAT ENERGY">
         </a>
@@ -182,9 +185,8 @@
           </a>
         </div>
       </div>
-    </footer>
-
-  </main>
+    </div>
+  </footer>
 
 </body>
 
