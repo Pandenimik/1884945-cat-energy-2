@@ -11,14 +11,17 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="header">
     <div class="container">
-      <a class="page-header__link" href="">
-        <picture class="page-header__picture">
-          <source media="(min-width: 1440px)" srcset="./images/logos/page-header-logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="./images/logos/page-header-logo-tablet.svg" width="174" height="50">
-          <img class="page-header__logo" width="190" height="38" src="./images/logos/page-header-logo-mobile.svg" alt="Логотип Cat Energy">
+      <a class="header__logo" href="index.html">
+        <picture class="header__picture">
+          <source media="(min-width: 1440px)" srcset="./images/logos/header-logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="./images/logos/header-logo-tablet.svg" width="174" height="50">
+          <img class="header__img" width="190" height="38" src="./images/logos/header-logo-mobile.svg" alt="Логотип Cat Energy">
         </picture>
+      </a>
+      <a class="header__logo header__logo--only-mobile" href="index.html">
+        <img class="header__img" width="101" height="18" src="./images/logos/header-text-logo-mobile.svg" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -29,10 +32,12 @@
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-        <button class="burger-toggle" type="button"></button>
+        <button class="burger-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -95,20 +100,20 @@
       </div>
     </section>
 
-    <section class="example wrapper wrapper--examle">
+    <section class="example wrapper wrapper--example">
       <div class="container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="example__dl">
-          <div class="example__dt-dd-container">
-            <dt class="example__dt">снижение веса</dt>
-            <dd class="example__dd">5 кг</dd>
+        <dl class="example__list">
+          <div class="example__item">
+            <dt class="example__property">снижение веса</dt>
+            <dd class="example__value">5 кг</dd>
           </div>
-          <div class="example__dt-dd-container">
-            <dt class="example__dt">затрачено времени</dt>
-            <dd class="example__dd">60 ДНЕЙ</dd>
+          <div class="example__item">
+            <dt class="example__property">затрачено времени</dt>
+            <dd class="example__value">60 ДНЕЙ</dd>
           </div>
         </dl>
         <div class="example__slider slider ">
@@ -120,28 +125,28 @@
             <source media="(min-width: 768px)" width="560" height="512" srcset="./images/slider/cat-after.png">
             <img class="slider__img slider__img--after" width="280" height="256" src="./images/slider/cat-after-mobile.png" alt="Кот после похудения">
           </picture>
-          <input class="slider__range" type="range">
+          <label class="visually-hidden" for="slider">До и после</label>
+          <input class="slider__range" type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="page-footer">
+  <footer class=" page-footer">
     <section class="contacts wrapper wrapper--contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="container">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__info">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
-    </section>
-    <section class="map wrapper wrapper--map">
-      <h2 class="visually-hidden">Мы на карте</h2>
       <!-- Потом здесь будет карта -->
-      <picture class="map__picture">
+      <picture class="contacts__map-picture">
         <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
         <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
-        <img class="map__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
+        <img class="contacts__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
       </picture>
     </section>
     <div class="bottom wrapper wrapper--bottom">

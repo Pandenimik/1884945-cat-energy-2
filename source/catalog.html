@@ -11,14 +11,17 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="header">
     <div class="container">
-      <a class="page-header__link" href="">
-        <picture class="page-header__picture">
-          <source media="(min-width: 1440px)" srcset="./images/logos/page-header-logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="./images/logos/page-header-logo-tablet.svg" width="174" height="50">
-          <img class="page-header__logo" width="190" height="38" src="./images/logos/page-header-logo-mobile.svg" alt="Логотип Cat Energy">
+      <a class="header__logo" href="index.html">
+        <picture class="header__picture">
+          <source media="(min-width: 1440px)" srcset="./images/logos/header-logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="./images/logos/header-logo-tablet.svg" width="174" height="50">
+          <img class="header__img" width="190" height="38" src="./images/logos/header-logo-mobile.svg" alt="Логотип Cat Energy">
         </picture>
+      </a>
+      <a class="header__logo header__logo--only-mobile" href="index.html">
+        <img class="header__img" width="101" height="18" src="./images/logos/header-text-logo-mobile.svg" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -29,7 +32,7 @@
             <a class="main-nav__link main-nav__link--current" href="">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
         <button class="burger-toggle" type="button"></button>
@@ -41,7 +44,7 @@
     <h1 class="page__title container">Каталог продукции</h1>
     <section class="main-products">
       <h2 class="visually-hidden">Основные товары</h2>
-      <ul class="main-cards container">
+      <ul class="main-cards">
         <li class="main-card">
           <a class="main-card__picture-link" href="">
             <picture class="main-card__picture">
@@ -53,18 +56,18 @@
           <a class="main-card__title-link" href="">
             <h3 class="main-card__title">Cat Energy PRO 500 г</h3>
           </a>
-          <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">500 г</dd>
+          <dl class="main-card__list">
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">500 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Курица</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Курица</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">700 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">700 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
@@ -81,17 +84,17 @@
             <h3 class="main-card__title">Cat Energy PRO 1000 г</h3>
           </a>
           <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">1000 г</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">1000 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Курица</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Курица</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">1000 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">1000 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
@@ -108,17 +111,17 @@
             <h3 class="main-card__title">Cat Energy PRO 500 г</h3>
           </a>
           <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">500 г</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">500 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Рыба</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Рыба</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">700 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">700 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
@@ -135,17 +138,17 @@
             <h3 class="main-card__title">Cat Energy PRO 1000 г</h3>
           </a>
           <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">1000 г</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">1000 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Рыба</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Рыба</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">1000 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">1000 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
@@ -162,17 +165,17 @@
             <h3 class="main-card__title">Cat Energy SLIM 500 г</h3>
           </a>
           <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">500 г</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">500 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Гречка</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Гречка</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">400 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">400 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
@@ -189,17 +192,17 @@
             <h3 class="main-card__title">Cat Energy SLIM 1000 г</h3>
           </a>
           <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">1000 г</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">1000 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Гречка</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Гречка</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">700 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">700 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
@@ -216,75 +219,77 @@
             <h3 class="main-card__title">Cat Energy slim 500 г</h3>
           </a>
           <dl class="main-card__dl">
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Масса</dt>
-              <dd class="main-card__dd">500 г</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Масса</dt>
+              <dd class="main-card__value">500 г</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Вкус</dt>
-              <dd class="main-card__dd">Рис</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Вкус</dt>
+              <dd class="main-card__value">Рис</dd>
             </div>
-            <div class="main-card__dt-dd-container">
-              <dt class="main-card__dt">Цена</dt>
-              <dd class="main-card__dd">500 ₽</dd>
+            <div class="main-card__item">
+              <dt class="main-card__property">Цена</dt>
+              <dd class="main-card__value">500 ₽</dd>
             </div>
           </dl>
           <a class="main-card__button button button--primary" href="">Заказать</a>
         </li>
         <li class="main-card main-card--special">
-          <a class="main-card__picture-link" href="">
-            <picture class="main-card__picture">
-              <source media="(min-width: 768px)" width="60" height="60" srcset="./images/main-cards/plus-icon.svg">
-              <img class="main-card__img" width="30" height="30" src="./images/main-cards/plus-icon.svg" alt="">
-            </picture>
-          </a>
-          <a class="main-card__title-link" href="">
-            <h3 class="main-card__title">Показать еще 100500 товаров</h3>
-          </a>
+          <h3 class="main-card__title">Показать еще 100500 товаров</h3>
           <p class="main-card__text">На самом деле вкусов гораздо больше!</p>
-          <a class="main-card__button button button--primary" href="">Показать все</a>
+          <a class="main-card__button button button--secondary" href="">Показать все</a>
         </li>
       </ul>
     </section>
 
-    <section class="sub-products container">
-      <h2 class="sub-products__title">Дополнительные товары</h2>
-      <ul class="sub-cards">
-        <li class="sub-card">
-          <a class="sub-card__title-link" href="">
-            <h3 class="sub-card__title">Сахарозаменитель</h3>
-          </a>
-          <p class="sub-card__value">1 упаковка (100 г)</p>
-          <p class="sub-card__price">200 ₽</p>
-          <a class="sub-card__button button button--primary" href="">заказать</a>
-        </li>
-        <li class="sub-card">
-          <a class="sub-card__title-link" href="">
-            <h3 class="sub-card__title">питьевая вода</h3>
-          </a>
-          <p class="sub-card__value">5 литров</p>
-          <p class="sub-card__price">50 ₽</p>
-          <a class="sub-card__button button button--primary" href="">заказать</a>
-        </li>
-        <li class="sub-card">
-          <a class="sub-card__title-link" href="">
-            <h3 class="sub-card__title">молоко</h3>
-          </a>
-          <p class="sub-card__value">1 литр</p>
-          <p class="sub-card__price">100 ₽</p>
-          <a class="sub-card__button button button--primary" href="">заказать</a>
-        </li>
-        <li class="sub-card">
-          <a class="sub-card__title-link" href="">
-            <h3 class="sub-card__title">витамины</h3>
-          </a>
-          <p class="sub-card__value">1 упаковка (30 г)</p>
-          <p class="sub-card__price">300 ₽</p>
-          <a class="sub-card__button button button--primary" href="">заказать</a>
-        </li>
-      </ul>
-      <div class="gift">
-        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+    <section class="sub-products">
+      <div class="container">
+        <h2 class="sub-products__title">Дополнительные товары</h2>
+        <ul class="sub-cards">
+          <li class="sub-card">
+            <a class="sub-card__title-link" href="">
+              <h3 class="sub-card__title">Сахарозаменитель</h3>
+            </a>
+            <dl class="sub-card__list">
+              <dt class="sub-card__product-value">1 упаковка (100 г)</dt>
+              <dd class="sub-card__price">200 ₽</dd>
+            </dl>
+            <a class="sub-card__button button button--primary" href="">заказать</a>
+          </li>
+          <li class="sub-card">
+            <a class="sub-card__title-link" href="">
+              <h3 class="sub-card__title">питьевая вода</h3>
+            </a>
+            <dl class="sub-card__list">
+              <dt class="sub-card__product-value">5 литров</dt>
+              <dd class="sub-card__price">50 ₽</dd>
+            </dl>
+            <a class="sub-card__button button button--primary" href="">заказать</a>
+          </li>
+          <li class="sub-card">
+            <a class="sub-card__title-link" href="">
+              <h3 class="sub-card__title">молоко</h3>
+            </a>
+            <dl class="sub-card__list">
+              <dt class="sub-card__product-value">1 литр</dt>
+              <dd class="sub-card__price">100 ₽</dd>
+            </dl>
+            <a class="sub-card__button button button--primary" href="">заказать</a>
+          </li>
+          <li class="sub-card">
+            <a class="sub-card__title-link" href="">
+              <h3 class="sub-card__title">витамины</h3>
+            </a>
+            <dl class="sub-card__list">
+              <dt class="sub-card__product-value">1 упаковка (30 г)</dt>
+              <dd class="sub-card__price">300 ₽</dd>
+            </dl>
+            <a class="sub-card__button button button--primary" href="">заказать</a>
+          </li>
+        </ul>
+        <div class="gift">
+          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="subscribe container">
@@ -303,17 +308,16 @@
     <section class="contacts wrapper wrapper--contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="container">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__info">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
-    </section>
-    <section class="map wrapper wrapper--map">
-      <h2 class="visually-hidden">Мы на карте</h2>
       <!-- Потом здесь будет карта -->
-      <picture class="map__picture">
+      <picture class="contacts__map-picture">
         <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
         <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
-        <img class="map__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
+        <img class="contacts__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
       </picture>
     </section>
     <div class="bottom wrapper wrapper--bottom">
