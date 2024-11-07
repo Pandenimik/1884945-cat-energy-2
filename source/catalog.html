@@ -11,33 +11,31 @@
 
 <body class="page__body">
 
-  <header class="header">
-    <div class="container">
-      <a class="header__logo" href="index.html">
-        <picture class="header__picture">
-          <source media="(min-width: 1440px)" srcset="./images/logos/header-logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="./images/logos/header-logo-tablet.svg" width="174" height="50">
-          <img class="header__img" width="190" height="38" src="./images/logos/header-logo-mobile.svg" alt="Логотип Cat Energy">
-        </picture>
-      </a>
-      <a class="header__logo header__logo--only-mobile" href="index.html">
-        <img class="header__img" width="101" height="18" src="./images/logos/header-text-logo-mobile.svg" alt="Cat Energy">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-        <button class="burger-toggle" type="button"></button>
-      </nav>
-    </div>
+  <header class="header container">
+    <a class="header__logo" href="index.html">
+      <picture class="header__picture">
+        <source media="(min-width: 1440px)" srcset="./images/logos/header-logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="./images/logos/header-logo-tablet.svg" width="174" height="50">
+        <img class="header__img" width="190" height="38" src="./images/logos/header-logo-mobile.svg" alt="Логотип Cat Energy">
+      </picture>
+    </a>
+    <a class="header__logo header__logo--only-mobile" href="index.html">
+      <img class="header__img" width="101" height="18" src="./images/logos/header-text-logo-mobile.svg" alt="Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="burger-toggle" type="button"></button>
+    </nav>
   </header>
 
   <main class="main">
@@ -242,56 +240,55 @@
       </ul>
     </section>
 
-    <section class="sub-products">
-      <div class="container">
-        <h2 class="sub-products__title">Дополнительные товары</h2>
-        <ul class="sub-cards">
-          <li class="sub-card">
-            <a class="sub-card__title-link" href="">
-              <h3 class="sub-card__title">Сахарозаменитель</h3>
-            </a>
-            <dl class="sub-card__list">
-              <dt class="sub-card__product-value">1 упаковка (100 г)</dt>
-              <dd class="sub-card__price">200 ₽</dd>
-            </dl>
-            <a class="sub-card__button button button--primary" href="">заказать</a>
-          </li>
-          <li class="sub-card">
-            <a class="sub-card__title-link" href="">
-              <h3 class="sub-card__title">питьевая вода</h3>
-            </a>
-            <dl class="sub-card__list">
-              <dt class="sub-card__product-value">5 литров</dt>
-              <dd class="sub-card__price">50 ₽</dd>
-            </dl>
-            <a class="sub-card__button button button--primary" href="">заказать</a>
-          </li>
-          <li class="sub-card">
-            <a class="sub-card__title-link" href="">
-              <h3 class="sub-card__title">молоко</h3>
-            </a>
-            <dl class="sub-card__list">
-              <dt class="sub-card__product-value">1 литр</dt>
-              <dd class="sub-card__price">100 ₽</dd>
-            </dl>
-            <a class="sub-card__button button button--primary" href="">заказать</a>
-          </li>
-          <li class="sub-card">
-            <a class="sub-card__title-link" href="">
-              <h3 class="sub-card__title">витамины</h3>
-            </a>
-            <dl class="sub-card__list">
-              <dt class="sub-card__product-value">1 упаковка (30 г)</dt>
-              <dd class="sub-card__price">300 ₽</dd>
-            </dl>
-            <a class="sub-card__button button button--primary" href="">заказать</a>
-          </li>
-        </ul>
-        <div class="gift">
-          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
+    <section class="sub-products container">
+      <h2 class="sub-products__title">Дополнительные товары</h2>
+      <ul class="sub-cards">
+        <li class="sub-card">
+          <a class="sub-card__title-link" href="">
+            <h3 class="sub-card__title">Сахарозаменитель</h3>
+          </a>
+          <dl class="sub-card__list">
+            <dt class="sub-card__product-value">1 упаковка (100 г)</dt>
+            <dd class="sub-card__price">200 ₽</dd>
+          </dl>
+          <a class="sub-card__button button button--primary" href="">заказать</a>
+        </li>
+        <li class="sub-card">
+          <a class="sub-card__title-link" href="">
+            <h3 class="sub-card__title">питьевая вода</h3>
+          </a>
+          <dl class="sub-card__list">
+            <dt class="sub-card__product-value">5 литров</dt>
+            <dd class="sub-card__price">50 ₽</dd>
+          </dl>
+          <a class="sub-card__button button button--primary" href="">заказать</a>
+        </li>
+        <li class="sub-card">
+          <a class="sub-card__title-link" href="">
+            <h3 class="sub-card__title">молоко</h3>
+          </a>
+          <dl class="sub-card__list">
+            <dt class="sub-card__product-value">1 литр</dt>
+            <dd class="sub-card__price">100 ₽</dd>
+          </dl>
+          <a class="sub-card__button button button--primary" href="">заказать</a>
+        </li>
+        <li class="sub-card">
+          <a class="sub-card__title-link" href="">
+            <h3 class="sub-card__title">витамины</h3>
+          </a>
+          <dl class="sub-card__list">
+            <dt class="sub-card__product-value">1 упаковка (30 г)</dt>
+            <dd class="sub-card__price">300 ₽</dd>
+          </dl>
+          <a class="sub-card__button button button--primary" href="">заказать</a>
+        </li>
+      </ul>
+      <div class="gift">
+        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
+
     <section class="subscribe container">
       <h2 class="subscribe__title container">Акции и новинки</h2>
       <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
@@ -305,23 +302,23 @@
   </main>
 
   <footer class="footer">
-    <section class="contacts wrapper wrapper--contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="container">
-        <div class="contacts__info">
+    <div class="wrapper wrapper--contacts">
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__info container">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-      </div>
-      <!-- Потом здесь будет карта -->
-      <picture class="contacts__map-picture">
-        <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
-        <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
-        <img class="contacts__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
-      </picture>
-    </section>
-    <div class="bottom wrapper wrapper--bottom">
-      <div class="container">
+        <!-- Потом здесь будет карта -->
+        <picture class="contacts__map-picture">
+          <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
+          <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
+          <img class="contacts__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
+        </picture>
+      </section>
+    </div>
+    <div class="wrapper wrapper--bottom">
+      <div class="bottom container">
         <a class="bottom__link" href="index.html">
           <img class="bottom__logo" src="./images/logos/footer-logo.svg" alt="Логотип CAT ENERGY">
         </a>

@@ -11,40 +11,41 @@
 
 <body class="page__body">
 
-  <header class="header">
-    <div class="container">
-      <a class="header__logo" href="index.html">
-        <picture class="header__picture">
-          <source media="(min-width: 1440px)" srcset="./images/logos/header-logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="./images/logos/header-logo-tablet.svg" width="174" height="50">
-          <img class="header__img" width="190" height="38" src="./images/logos/header-logo-mobile.svg" alt="Логотип Cat Energy">
-        </picture>
-      </a>
-      <a class="header__logo header__logo--only-mobile" href="index.html">
-        <img class="header__img" width="101" height="18" src="./images/logos/header-text-logo-mobile.svg" alt="Cat Energy">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Подбор программы</a>
-          </li>
-        </ul>
-        <button class="burger-toggle" type="button"></button>
-      </nav>
-    </div>
+  <header class="header container">
+    <a class="header__logo" href="index.html">
+      <picture class="header__picture">
+        <source media="(min-width: 1440px)" srcset="./images/logos/header-logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="./images/logos/header-logo-tablet.svg" width="174" height="50">
+        <img class="header__img" width="190" height="38" src="./images/logos/header-logo-mobile.svg" alt="Логотип Cat Energy">
+      </picture>
+    </a>
+    <a class="header__logo header__logo--only-mobile" href="index.html">
+      <img class="header__img" width="101" height="18" src="./images/logos/header-text-logo-mobile.svg" alt="Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="burger-toggle" type="button"></button>
+    </nav>
   </header>
 
   <main class="main">
-    <h1 class="page__title container">Подбор программы</h1>
+    <h1 class="page__title container container--form-tablet">Подбор программы</h1>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
-      <p class="form__text container">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form__fieldset">
+      <p class="form__text container container--form-tablet">
+        Заполните анкету, и мы подберем<br>
+        программу питания для вашего кота
+      </p>
+      <fieldset class="form__fieldset container--form-tablet">
         <legend class="form__legend visually-hidden">Данные кота</legend>
         <label class="form__label" for="cat-name">ИМЯ:*</label>
         <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
@@ -54,7 +55,7 @@
         <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset container--form-tablet">
         <legend class="form__legend visually-hidden">Необходимый результат</legend>
         <label class="form__label">
           <input class="radio" type="radio" name="program" id="slim" value="slim" checked>
@@ -70,7 +71,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset container--form-tablet">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <label class="form__label" for="email">E-mail:*</label>
         <input class="subscribe__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
@@ -78,12 +79,12 @@
         <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" autocomplete="on" required>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset container--form-tablet">
         <legend class="form__legend">Комментарий</legend>
         <textarea class="form__comment" id="comment" name="comment" rows="5" cols="33" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset container--form-tablet">
         <legend class="form__legend">Дополнительно</legend>
         <label class="form__label">
           <input class="checkbox" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
@@ -102,29 +103,31 @@
           Витамины
         </label>
       </fieldset>
-      <button class="form__button button button--primary" type="submit">Отправить заявку</button>
-      <p class="form__note">* — Обязательные поля</p>
+      <div class="form__button-container container--form-tablet">
+        <button class="form__button button button--primary" type="submit">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
 
   <footer class="footer">
-    <section class="contacts wrapper wrapper--contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="container">
-        <div class="contacts__info">
+    <div class="wrapper wrapper--contacts">
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__info container">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-      </div>
-      <!-- Потом здесь будет карта -->
-      <picture class="contacts__map-picture">
-        <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
-        <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
-        <img class="contacts__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
-      </picture>
-    </section>
-    <div class="bottom wrapper wrapper--bottom">
-      <div class="container">
+        <!-- Потом здесь будет карта -->
+        <picture class="contacts__map-picture">
+          <source media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map/map-desktop.png">
+          <source media="(min-width: 768px)" width="768" height="400" srcset="./images/map/map-tablet.png">
+          <img class="contacts__img" width="320" height="362" src="./images/map/map-mobile.png" alt="">
+        </picture>
+      </section>
+    </div>
+    <div class="wrapper wrapper--bottom">
+      <div class="bottom container">
         <a class="bottom__link" href="index.html">
           <img class="bottom__logo" src="./images/logos/footer-logo.svg" alt="Логотип CAT ENERGY">
         </a>
