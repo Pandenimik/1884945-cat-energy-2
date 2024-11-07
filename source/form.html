@@ -45,17 +45,17 @@
         Заполните анкету, и мы подберем<br>
         программу питания для вашего кота
       </p>
-      <fieldset class="form__fieldset container--form-tablet">
+      <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend visually-hidden">Данные кота</legend>
         <label class="form__label" for="cat-name">ИМЯ:*</label>
         <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-        <label class="form__label" for="finish-price">Вес (кг):*</label>
+        <label class="form__label" for="cat-weight">Вес (кг):*</label>
         <input class="form__input" type="number" id="cat-weight" name="cat-weight" value="7">
         <label class="form__label" for="cat-age">Возраст (лет):</label>
         <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
       </fieldset>
 
-      <fieldset class="form__fieldset container--form-tablet">
+      <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend visually-hidden">Необходимый результат</legend>
         <label class="form__label">
           <input class="radio" type="radio" name="program" id="slim" value="slim" checked>
@@ -71,20 +71,20 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset container--form-tablet">
+      <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <label class="form__label" for="email">E-mail:*</label>
-        <input class="subscribe__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
+        <input class="form__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
         <label class="form__label" for="cat-age">Телефон:*</label>
         <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" autocomplete="on" required>
       </fieldset>
 
-      <fieldset class="form__fieldset container--form-tablet">
+      <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend">Комментарий</legend>
         <textarea class="form__comment" id="comment" name="comment" rows="5" cols="33" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__fieldset container--form-tablet">
+      <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend">Дополнительно</legend>
         <label class="form__label">
           <input class="checkbox" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
@@ -103,7 +103,7 @@
           Витамины
         </label>
       </fieldset>
-      <div class="form__button-container container--form-tablet">
+      <div class="form__button-container container container--form-tablet">
         <button class="form__button button button--primary" type="submit">Отправить заявку</button>
         <p class="form__note">* — Обязательные поля</p>
       </div>
