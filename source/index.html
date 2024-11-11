@@ -45,7 +45,7 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Главная страница</h1>
+    <h1 class="page__title visually-hidden">Главная страница</h1>
 
     <div class="wrapper wrapper--intro">
       <section class="intro container">
@@ -114,17 +114,17 @@
             <dd class="example__value">60 ДНЕЙ</dd>
           </div>
         </dl>
-        <div class="example__slider slider ">
+        <div class="example__compare-slider compare-slider ">
           <picture>
-            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/slider/cat-before@1x.png 1x, images/slider/cat-before@2x.png 2x">
-            <img class="slider__img slider__img--before" width="280" height="256" src="images/slider/cat-before-mobile@1x.png" srcset="images/slider/cat-before-mobile@2x.png 2x" alt="Кот до похудения">
+            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/compare-slider/cat-before@1x.png 1x, images/compare-slider/cat-before@2x.png 2x">
+            <img class="compare-slider__img compare-slider__img--before" width="280" height="256" src="images/compare-slider/cat-before-mobile@1x.png" srcset="images/compare-slider/cat-before-mobile@2x.png 2x" alt="Кот до похудения">
           </picture>
           <picture>
-            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/slider/cat-after@1x.png 1x, images/slider/cat-after@2x.png 2x">
-            <img class="slider__img slider__img--after" width="280" height="256" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" alt="Кот после похудения">
+            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/compare-slider/cat-after@1x.png 1x, images/compare-slider/cat-after@2x.png 2x">
+            <img class="compare-slider__img compare-slider__img--after" width="280" height="256" src="images/compare-slider/cat-after-mobile@1x.png" srcset="images/compare-slider/cat-after-mobile@2x.png 2x" alt="Кот после похудения">
           </picture>
-          <label class="visually-hidden" for="slider">До и после</label>
-          <input class="slider__range" type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+          <label class="visually-hidden" for="compare-slider">До и после</label>
+          <input class="compare-slider__range" type="range" min="0" max="100" value="50" id="compare-slider" oninput="slide()">
         </div>
       </section>
     </div>
