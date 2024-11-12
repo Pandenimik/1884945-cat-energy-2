@@ -1,0 +1,13 @@
+.wrapper {
+  &--intro {
+    background: linear-gradient(to bottom, $background-color-accent 302px, $background-color-primary 108px);
+  }
+
+  &--example {
+    background-color: $background-color-special;
+  }
+
+  &--bottom {
+    background-color: $background-color-secondary;
+  }
+}

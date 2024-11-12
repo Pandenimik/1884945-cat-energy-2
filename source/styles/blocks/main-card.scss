@@ -1,0 +1,34 @@
+.main-card {
+  &__title-link {
+    @include reset-link;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $text-color-dark-special-1;
+  }
+
+  &__text {
+    font-family: $font-family-secondary;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color-dark-secondary;
+  }
+
+  &__item {
+    font-family: $font-family-secondary;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color-dark-secondary;
+  }
+
+  &__button {
+    @include reset-link;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

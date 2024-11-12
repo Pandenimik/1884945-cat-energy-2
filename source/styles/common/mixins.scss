@@ -9,7 +9,8 @@
 }
 
 @mixin reset-link {
-  color: inherit;
+  display: block;
+
   text-decoration: none;
 }
 

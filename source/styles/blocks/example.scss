@@ -1,0 +1,25 @@
+.example {
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__text {
+    font-family: $font-family-secondary;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-dark-secondary;
+  }
+
+  &__property {
+    font-family: $font-family-secondary;
+    font-size: 12px;
+    line-height: 12px;
+    color: $text-color-dark-secondary;
+  }
+
+  &__value {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

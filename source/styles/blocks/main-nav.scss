@@ -1,0 +1,14 @@
+.main-nav {
+  &__list {
+    @include reset-list;
+  }
+
+  &__link {
+    @include reset-link;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $text-color-dark-primary;
+  }
+}
