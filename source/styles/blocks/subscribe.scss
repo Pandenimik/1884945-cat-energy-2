@@ -1,31 +1,29 @@
-.subscribe {
-  &__title {
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-  }
+.subscribe__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
 
-  &__text {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-  }
+.subscribe__text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
 
-  &__input {
-    font-family: $font-family-primary;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
+.subscribe__input {
+  font-family: $font-family-primary;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-color-dark-secondary;
+
+  &::placeholder {
     color: $text-color-dark-secondary;
-
-    &::placeholder {
-      color: $text-color-dark-secondary;
-    }
   }
+}
 
-  &__button {
-    padding: 15px;
-    font-size: 20px;
-    line-height: 26px;
-  }
+.subscribe__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
 }

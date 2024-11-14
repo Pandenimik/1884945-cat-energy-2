@@ -1,17 +1,15 @@
-.advantages {
-  &__list {
-    @include reset-list;
-  }
+.advantages__list {
+  @include reset-list;
+}
 
-  &__title {
-    font-size: 36px;
-    line-height: 40px;
-  }
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+}
 
-  &__text {
-    font-family: $font-family-secondary;
-    font-size: 14px;
-    line-height: 18px;
-    color: $text-color-dark-secondary;
-  }
+.advantages__text {
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-dark-secondary;
 }

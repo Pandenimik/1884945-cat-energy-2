@@ -1,14 +1,12 @@
-.main-nav {
-  &__list {
-    @include reset-list;
-  }
+.main-nav__list {
+  @include reset-list;
+}
 
-  &__link {
-    @include reset-link;
+.main-nav__link {
+  @include reset-link;
 
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $text-color-dark-primary;
-  }
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-color-dark-primary;
 }

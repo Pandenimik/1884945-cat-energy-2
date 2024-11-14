@@ -1,12 +1,11 @@
 .gift {
   background-color: $background-color-accent;
-
-  &__text {
-    font-family: $font-family-secondary;
-    font-size: 16px;
-    line-height: 20px;
-    color: $text-color-light-primary;
-    text-align: center;
-  }
 }
 
+.gift__text {
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-light-primary;
+  text-align: center;
+}

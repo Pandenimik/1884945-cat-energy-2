@@ -1,23 +1,23 @@
 .intro {
   text-align: center;
   color: $text-color-light-primary;
+}
 
-  &__title {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-  }
+.intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
 
-  &__text {
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-  }
+.intro__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
 
-  &__button {
-    @include reset-link;
+.intro__button {
+  @include reset-link;
 
-    font-size: 16px;
-    line-height: 20px;
-  }
+  font-size: 16px;
+  line-height: 20px;
 }
