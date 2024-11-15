@@ -32,3 +32,9 @@
 
   cursor: pointer;
 }
+
+@mixin container($min-width: $min-width-mobile, $padding-x: $padding-x-mobile) {
+  min-width: $min-width;
+  margin: 0 auto;
+  padding: 0 $padding-x;
+}

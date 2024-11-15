@@ -1,6 +1,6 @@
 /* Fonts variables */
-$font-family-primary: "Oswald", "Arial", sans-serif;
-$font-family-secondary: "Lato", "Arial", sans-serif;
+$font-family-primary: ("Oswald", "Arial", sans-serif);
+$font-family-secondary: ("Lato", "Arial", sans-serif);
 
 /* Colors variables */
 /* Palette */
@@ -64,3 +64,16 @@ $text-color-dark-secondary: $grey-68rgb;
 $text-color-dark-special-1: $grey-17rgb;
 $text-color-dark-special-2: $grey-34rgb;
 $text-color-light-primary: $white;
+
+/* Sizes */
+$min-width-mobile: 320px;
+$max-width-mobile: 767px;
+$min-width-tablet: 768px;
+$max-width-tablet: 1439px;
+$min-width-desktop: 1440px;
+$max-width-desktop: 1440px;
+
+$padding-x-mobile: 20px;
+$padding-x-tablet: 30px;
+$padding-x-tablet-form: 70px;
+$padding-x-desktop: 110px;

@@ -1,6 +1,8 @@
 .wrapper {
   &--intro {
-    background: linear-gradient(to bottom, $background-color-accent 302px, $background-color-primary 108px);
+    @media (max-width: $max-width-mobile) {
+      background: linear-gradient(to bottom, $background-color-accent 302px, $background-color-primary 108px);
+    }
   }
 
   &--example {
