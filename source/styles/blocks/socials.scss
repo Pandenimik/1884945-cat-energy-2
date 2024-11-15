@@ -1,3 +1,46 @@
 .socials {
   @include reset-list;
 }
+
+.socials__link {
+  @include reset-list;
+
+  display: block;
+  width: 28px;
+  height: 22px;
+
+  /* Псевдоэлемент нужен, чтобы было видно outline при фокусе на иконках с помощью Tab, иначе маска все перекрывает. */
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $icons-color-dark-secondary;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &:hover::before {
+    background-color: $icons-color-dark-hover;
+  }
+
+  &:focus::before {
+    background-color: $icons-color-dark-hover;
+  }
+
+  &:active::before {
+    background-color: $icons-color-dark-active;
+  }
+
+  &--vk::before {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
+}
