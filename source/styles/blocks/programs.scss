@@ -22,8 +22,32 @@
 .programs__link {
   @include reset-link;
 
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $text-color-dark-primary;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 10px;
+
+    background-color: $icons-color-dark-primary;
+    mask-image: url("../../icons/stack.svg#arrow");
+  }
+
+  &:hover::after {
+    @include transition;
+    mask-image: url("../../icons/stack.svg#arrow-hover");
+  }
+
+  &:active {
+    @include transition;
+    opacity: 0.3;
+  }
 }

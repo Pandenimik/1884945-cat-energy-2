@@ -23,19 +23,19 @@
         <img class="header__img" width="33" height="38" src="./images/logos/logo-mobile.svg" alt="Логотип Cat Energy">
       </picture>
     </a>
-    <a class="header__logo header__logo--only-mobile" href="index.html">
-      <img class="header__img" width="101" height="18" src="./images/logos/logo-text.svg" alt="Cat Energy">
+    <a class="header__logo-secondary" href="index.html">
+      <span class="visually-hidden">Cat Energy</span>
     </a>
     <nav class="main-nav">
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--closed">
         <li class="main-nav__item">
           <a class="main-nav__link" href="./index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="">Подбор программы</a>
+          <a class="main-nav__link main-nav__link--current" href="">Подбор программы</a>
         </li>
       </ul>
       <button class="burger-toggle" type="button"></button>
@@ -51,12 +51,19 @@
       </p>
       <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend visually-hidden">Данные кота</legend>
-        <label class="form__label" for="cat-name">ИМЯ:*</label>
-        <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-        <label class="form__label" for="cat-weight">Вес (кг):*</label>
-        <input class="form__input" type="number" id="cat-weight" name="cat-weight" value="7">
-        <label class="form__label" for="cat-age">Возраст (лет):</label>
-        <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
+        <label class="form__label" for="cat-name">
+          ИМЯ:*
+          <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+        </label>
+        <label class="form__label" for="cat-weight">
+          Вес (кг):*
+          <input class="form__input" type="number" id="cat-weight" name="cat-weight" value="7">
+        </label>
+
+        <label class="form__label" for="cat-age">
+          Возраст (лет):
+          <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
+        </label>
       </fieldset>
 
       <fieldset class="form__fieldset container container--form-tablet">
@@ -77,10 +84,15 @@
 
       <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <label class="form__label" for="email">E-mail:*</label>
-        <input class="form__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
-        <label class="form__label" for="cat-age">Телефон:*</label>
-        <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" autocomplete="on" required>
+        <label class="form__label" for="email">
+          E-mail:*
+          <input class="form__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
+        </label>
+
+        <label class="form__label" for="cat-age">
+          Телефон:*
+          <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" autocomplete="on" required>
+        </label>
       </fieldset>
 
       <fieldset class="form__fieldset container container--form-tablet">
@@ -153,9 +165,11 @@
           </li>
         </ul>
         <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Переход на сайт разработчика</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Перейти на сайт разработчика</span>
+            HTML Academy
+            <div class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">
+            </div>
           </a>
         </div>
       </div>

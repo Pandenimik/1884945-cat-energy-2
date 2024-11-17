@@ -7,8 +7,10 @@ $font-family-secondary: ("Lato", "Arial", sans-serif);
 $black: #000000;
 $grey-17rgb: #111111;
 $grey-34rgb: #222222;
+$grey-62rgb: #3e3e3e;
 $grey-68rgb: #444444;
 $grey-102rgb: #666666;
+$grey-107rgb: #6b6b6b;
 $grey-205rgb: #cdcdcd;
 $grey-211rgb: #d3d3d3;
 $grey-217rgb: #d9d9d9;
@@ -63,6 +65,8 @@ $text-color-dark-primary: $black;
 $text-color-dark-secondary: $grey-68rgb;
 $text-color-dark-special-1: $grey-17rgb;
 $text-color-dark-special-2: $grey-34rgb;
+$text-color-dark-special-3: $grey-62rgb;
+$text-color-dark-special-4: $grey-107rgb;
 $text-color-light-primary: $white;
 
 /* Sizes */
@@ -77,3 +81,6 @@ $padding-x-mobile: 20px;
 $padding-x-tablet: 30px;
 $padding-x-tablet-form: 70px;
 $padding-x-desktop: 110px;
+
+/* Animations */
+$transition-time: 0.3s;
