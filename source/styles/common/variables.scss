@@ -11,6 +11,7 @@ $grey-62rgb: #3e3e3e;
 $grey-68rgb: #444444;
 $grey-102rgb: #666666;
 $grey-107rgb: #6b6b6b;
+$grey-186rgb: #bababa;
 $grey-205rgb: #cdcdcd;
 $grey-211rgb: #d3d3d3;
 $grey-217rgb: #d9d9d9;
@@ -36,13 +37,14 @@ $border-color-dark-special-1: $grey-230rgb;
 $border-color-dark-special-2: $grey-231rgb;
 $border-color-dark-special-3: $grey-235rgb;
 $border-color-dark-focus: $grey-68rgb;
+$border-color-checkbox-hover: $grey-186rgb;
 $border-color-light-primary: $white;
 $border-color-accent: $lime;
 $border-color-error: $rose;
 
 $button-primary-bg-color: $lime;
 $button-primary-bg-color-hover: $green;
-$button-primary-color-active: $green;
+$button-primary-bg-color-active: $green;
 
 $button-secondary-bg-color: $grey-242rgb;
 $button-secondary-bg-color-hover: $grey-235rgb;
@@ -82,5 +84,5 @@ $padding-x-tablet: 30px;
 $padding-x-tablet-form: 70px;
 $padding-x-desktop: 110px;
 
-/* Animations */
+/* Others */
 $transition-time: 0.3s;

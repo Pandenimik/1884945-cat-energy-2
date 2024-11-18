@@ -23,6 +23,10 @@
   text-transform: uppercase;
   color: $text-color-dark-secondary;
   white-space: nowrap;
+
+  &:has(input:disabled) {
+    opacity: 0.3;
+  }
 }
 
 .form__input {
