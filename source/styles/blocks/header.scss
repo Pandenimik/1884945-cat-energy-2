@@ -23,17 +23,10 @@
     @include transition;
     opacity: 0.6;
   }
-}
 
-.header__logo-secondary {
-  @include reset-link;
-  @include mask("../../images/logos/logo-text.svg", $text-color-dark-special-1, $text-color-dark-special-3, $text-color-dark-special-3, $text-color-dark-special-4);
-
-  display: block;
-  width: 101px;
-  height: 18px;
-
-  @media (min-width: $min-width-tablet) {
-    display: none;
+  &--secondary {
+    @media (min-width: $min-width-tablet) {
+      display: none;
+    }
   }
 }

@@ -1,8 +1,16 @@
 .bottom__logo {
-  @include reset-link;
-  @include mask("../../images/logos/logo-text.svg", $text-color-dark-special-1, $text-color-dark-special-3, $text-color-dark-special-3, $text-color-dark-special-4);
+  &:hover {
+    @include transition;
+    opacity: 0.8;
+  }
 
-  display: block;
-  width: 128px;
-  height: 24px;
+  &:focus {
+    @include transition;
+    opacity: 0.8;
+  }
+
+  &:active {
+    @include transition;
+    opacity: 0.6;
+  }
 }
