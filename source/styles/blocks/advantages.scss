@@ -1,20 +1,26 @@
+.advantages {
+  padding-top: 10px;
+  padding-bottom: 49px;
+}
+
 .advantages__list {
   @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .advantages__item {
-  position: relative;
-
-  padding-left: 80px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
 
   &::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
 
     display: block;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
 
     background-color: $background-color-accent;
@@ -44,11 +50,14 @@
 }
 
 .advantages__title {
+  margin: 0 0 40px;
   font-size: 36px;
   line-height: 40px;
 }
 
 .advantages__text {
+  margin: 0;
+
   font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 18px;

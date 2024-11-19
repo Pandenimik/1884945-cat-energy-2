@@ -1,4 +1,5 @@
 
+// Burger nav-menu
 const button = document.querySelector('.burger-toggle');
 const navList = document.querySelector('.main-nav__list');
 const toggleNav = function () {
@@ -12,8 +13,13 @@ button.addEventListener('click', (e) => {
 });
 
 // Compare slider
-window.slide = function slide() {
-  const slideValue = document.getElementById('compareSlider').value;
+const compareSlider = document.querySelector('.compare-slider__range');
+const compareSlide = function () {
+  const slideValue = compareSlider.value;
   document.querySelector('.compare-slider__img--before').style.clipPath = `polygon(0 0, ${ slideValue }% 0, ${ slideValue }% 100%, 0 100%)`;
   document.querySelector('.compare-slider__img--after').style.clipPath = `polygon(${ slideValue }% 0, 100% 0, 100% 100%, ${ slideValue }% 100%)`;
 };
+
+compareSlider.addEventListener('input', () => {
+  compareSlide();
+});
