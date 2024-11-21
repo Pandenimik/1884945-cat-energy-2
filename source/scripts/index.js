@@ -20,6 +20,4 @@ const compareSlide = function () {
   document.querySelector('.compare-slider__img--after').style.clipPath = `polygon(${ slideValue }% 0, 100% 0, 100% 100%, ${ slideValue }% 100%)`;
 };
 
-compareSlider.addEventListener('input', () => {
-  compareSlide();
-});
+compareSlider.addEventListener('input', compareSlide);

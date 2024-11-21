@@ -19,8 +19,8 @@
     <a class="header__logo" href="index.html">
       <span class="visually-hidden">Перейти на гланую страницу</span>
       <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logos/logo-desktop.svg" width="202" height="59">
-        <source media="(min-width: 768px)" srcset="./images/logos/logo-tablet.svg" width="174" height="50">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logos/logo-desktop.svg" width="202" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logos/logo-tablet.svg" width="174" height="50">
         <img class="header__img" width="33" height="38" src="./images/logos/logo-mobile.svg" alt="Логотип Cat Energy">
       </picture>
     </a>
@@ -31,7 +31,7 @@
     <nav class="main-nav">
       <ul class="main-nav__list main-nav__list--closed">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="">Главная</a>
+          <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -126,7 +126,7 @@
             <img class="compare-slider__img compare-slider__img--after" width="280" height="256" src="images/compare-slider/cat-after-mobile@1x.png" srcset="images/compare-slider/cat-after-mobile@2x.png 2x" alt="Кот после похудения">
           </picture>
           <label class="visually-hidden" for="compare-slider">До и после</label>
-          <input class="compare-slider__range" type="range" min="0" max="100" value="50" id="compareSlider">
+          <input class="compare-slider__range" type="range" min="0" max="100" value="50" id="compare-slider" name="compare-slider">
         </div>
       </section>
     </div>
@@ -143,8 +143,8 @@
         </div>
         <!-- Потом здесь будет карта -->
         <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="400" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+          <source type="image/png" media="(min-width: 1440px)" width="1440" height="400" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" width="768" height="400" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
           <img class="contacts__img" width="320" height="362" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" alt="">
         </picture>
       </section>
@@ -176,7 +176,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Перейти на сайт разработчика</span>
             HTML Academy
-            <div class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">
+            <div class="copyright__icon">
             </div>
           </a>
         </div>

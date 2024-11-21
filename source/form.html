@@ -18,8 +18,8 @@
   <header class="header container">
     <a class="header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logos/logo-desktop.svg" width="202" height="59">
-        <source media="(min-width: 768px)" srcset="./images/logos/logo-tablet.svg" width="174" height="50">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logos/logo-desktop.svg" width="202" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logos/logo-tablet.svg" width="174" height="50">
         <img class="header__img" width="33" height="38" src="./images/logos/logo-mobile.svg" alt="Логотип Cat Energy">
       </picture>
     </a>
@@ -36,10 +36,12 @@
           <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="">Подбор программы</a>
+          <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="burger-toggle" type="button"></button>
+      <button class="burger-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
   </header>
 
@@ -85,12 +87,12 @@
 
       <fieldset class="form__fieldset container container--form-tablet">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <label class="form__label" for="email">
+        <label class="form__label">
           E-mail:*
           <input class="form__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
         </label>
 
-        <label class="form__label" for="cat-age">
+        <label class="form__label">
           Телефон:*
           <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" autocomplete="on" required>
         </label>
@@ -137,8 +139,8 @@
         </div>
         <!-- Потом здесь будет карта -->
         <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="400" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+          <source type="image/png" media="(min-width: 1440px)" width="1440" height="400" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" width="768" height="400" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
           <img class="contacts__img" width="320" height="362" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" alt="">
         </picture>
       </section>
@@ -170,7 +172,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Перейти на сайт разработчика</span>
             HTML Academy
-            <div class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">
+            <div class="copyright__icon">
             </div>
           </a>
         </div>
