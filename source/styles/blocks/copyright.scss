@@ -11,6 +11,10 @@
 
   cursor: pointer;
 
+  @media (min-width: $min-width-tablet) {
+    gap: 23px;
+  }
+
   &:hover .copyright__icon {
     @include transition;
 
