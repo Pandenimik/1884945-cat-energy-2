@@ -29,6 +29,10 @@
 
   &--example {
     background-color: $background-color-special;
+
+    @media (min-width: $min-width-tablet) {
+      background: linear-gradient(to top, $background-color-special 462px, $background-color-primary 462px 100%);
+    }
   }
 
   &--bottom {
