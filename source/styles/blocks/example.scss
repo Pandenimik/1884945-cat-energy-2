@@ -62,15 +62,16 @@
 
 .example__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 124px 124px;
   gap: 34px 32px;
+  margin: 0 auto 20px;
+  width: min-content;
 
-  margin: 0 0 20px;
 
   @media (min-width: $min-width-tablet) {
-    grid-template-columns: 22.88% 22.88% 1fr;
-    column-gap: 43px;
-
+    grid-template-columns: 162px 162px 1fr;
+    column-gap: 42px;
+    width: auto;
     margin: 0 0 104px;
   }
 
@@ -78,9 +79,6 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin: 0;
-
-    grid-template-columns: 28.93% 28.93% 1fr;
-    column-gap: 42px;
   }
 }
 

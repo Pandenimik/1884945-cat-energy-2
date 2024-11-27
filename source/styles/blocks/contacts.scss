@@ -1,8 +1,8 @@
 .contacts__info {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  margin: 0 auto;
+  padding: 26px 20px;
 
   @media (min-width: $min-width-tablet) {
     padding: 60px 70px;
@@ -13,8 +13,8 @@
     top: 95px;
     left: 110px;
 
-    max-width: 565px;
-    min-width: 565px;
+    width: 565px;
+    padding: 60px 80px;
 
     background-color: $background-color-primary;
   }
@@ -65,6 +65,12 @@
   @media (min-width: $min-width-desktop) {
     width: auto;
     text-align: start;
+  }
+}
+
+.contacts__empty-line {
+  @media (max-width: $max-width-tablet) {
+    display: none;
   }
 }
 

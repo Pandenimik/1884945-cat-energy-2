@@ -28,7 +28,7 @@
       <img class="header__img" width="101" height="18" src="../../images/logos/logo-text.svg" alt="Текстовый логотип Cat Energy">
     </a>
     <nav class="main-nav main-nav--catalog">
-      <ul class="main-nav__list main-nav__list--closed">
+      <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="./index.html">Главная</a>
         </li>
@@ -39,7 +39,7 @@
           <a class="main-nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <button class="burger-toggle" type="button">
+      <button class="burger-toggle opened-nav" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
@@ -334,9 +334,13 @@
     <div class="wrapper wrapper--contacts">
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__info container">
+        <div class="contacts__info">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8<br>
+            <br>
+            Санкт-Петербург
+          </address>
         </div>
         <!-- Потом здесь будет карта -->
         <picture>

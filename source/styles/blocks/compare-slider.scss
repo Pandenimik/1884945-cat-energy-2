@@ -1,5 +1,18 @@
 .compare-slider {
   position: relative;
+  color: $compare-slider-button-color;
+
+  &:has(.compare-slider__range:hover) {
+    @include transition;
+
+    color: $compare-slider-button-color-hover;
+  }
+
+  &:has(.compare-slider__range:active) {
+    @include transition;
+
+    color: $compare-slider-button-color-active;
+  }
 }
 
 .compare-slider__img {
@@ -28,48 +41,80 @@
 
   background-color: transparent;
   outline: none;
+  color: currentColor;
 
-  &::-webkit-slider-thumb {
+  cursor: pointer;
+
+  &::-webkit-slider-thumb,
+  &::-moz-range-thumb,
+  &::-ms-thumb {
     appearance: none;
 
     margin: 0;
     width: 40px;
-    height: 256px;
+    height: 100%;
 
     background-color: transparent;
-    background-image: url("../../icons/stack.svg#compare-slider");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     border: none;
-    border-radius: 50%;
 
-    cursor: pointer;
-
-    @media (min-width: $min-width-tablet) {
-      height: 512px;
-
-      background-image: url("../../icons/stack.svg#compare-slider-tablet");
-    }
+    cursor: col-resize;
+    pointer-events: auto;
 
     &:hover {
       @include transition;
-
-      background-image: url("../../icons/stack.svg#compare-slider-hover");
-
-      @media (min-width: $min-width-tablet) {
-        background-image: url("../../icons/stack.svg#compare-slider-tablet-hover");
-      }
     }
 
     &:active {
       @include transition;
-
-      background-image: url("../../icons/stack.svg#compare-slider-active");
-
-      @media (min-width: $min-width-tablet) {
-        background-image: url("../../icons/stack.svg#compare-slider-tablet-active");
-      }
     }
+  }
+
+  &::-webkit-slider-runnable-track {
+    height: 100%;
+  }
+}
+
+.compare-slider__thumb {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+
+  background-color: currentColor;
+  border-radius: 2px;
+
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+
+    background-color: $background-color-primary;
+    border: solid 2px currentColor;
+    border-radius: 50%;
+
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+
+    background-color: currentColor;
+    mask-image: url("../../icons/stack.svg#compare-slider-arrows");
+
+    pointer-events: none;
   }
 }

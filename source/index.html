@@ -29,7 +29,7 @@
       <img class="header__img" width="101" height="18" src="../../images/logos/logo-text.svg" alt="Текстовый логотип Cat Energy">
     </a>
     <nav class="main-nav main-nav--index">
-      <ul class="main-nav__list main-nav__list--closed">
+      <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
         </li>
@@ -40,7 +40,7 @@
           <a class="main-nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <button class="burger-toggle" type="button">
+      <button class="burger-toggle opened-nav" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
@@ -51,7 +51,10 @@
 
     <div class="wrapper wrapper--intro">
       <section class="intro container">
-        <h2 class="intro__title">Функциональное питание для котов</h2>
+        <h2 class="intro__title">
+          Функциональное<br>
+          питание для котов
+        </h2>
         <p class="intro__text">Занялся собой? Займись котом!</p>
         <picture>
           <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/intro/can-desktop@1x.png 1x, images/intro/can-desktop@2x.png 2x">
@@ -131,6 +134,7 @@
           </picture>
           <label class="visually-hidden" for="compare-slider">До и после</label>
           <input class="compare-slider__range" type="range" min="0" max="100" value="50" id="compare-slider" name="compare-slider">
+          <div class="compare-slider__thumb"></div>
         </div>
       </section>
     </div>
@@ -141,9 +145,13 @@
     <div class="wrapper wrapper--contacts">
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__info container">
+        <div class="contacts__info">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8<br>
+            <br class="contacts__empty-line">
+            Санкт-Петербург
+          </address>
         </div>
         <!-- Потом здесь будет карта -->
         <picture>

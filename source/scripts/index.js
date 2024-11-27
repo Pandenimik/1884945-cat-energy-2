@@ -2,6 +2,8 @@
 // Burger nav-menu
 const button = document.querySelector('.burger-toggle');
 const navList = document.querySelector('.main-nav__list');
+navList.classList.toggle('main-nav__list--closed');
+button.classList.toggle('opened-nav');
 const toggleNav = function () {
   navList.classList.toggle('main-nav__list--closed');
   button.classList.toggle('opened-nav');
@@ -18,6 +20,7 @@ const compareSlide = function () {
   const slideValue = compareSlider.value;
   document.querySelector('.compare-slider__img--before').style.clipPath = `polygon(0 0, ${ slideValue }% 0, ${ slideValue }% 100%, 0 100%)`;
   document.querySelector('.compare-slider__img--after').style.clipPath = `polygon(${ slideValue }% 0, 100% 0, 100% 100%, ${ slideValue }% 100%)`;
+  document.querySelector('.compare-slider__thumb').style.left = `${ slideValue }%`;
 };
 
-compareSlider.addEventListener('input', compareSlide);
+compareSlider?.addEventListener('input', compareSlide);
