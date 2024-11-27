@@ -11,6 +11,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=7e3ff21a-0824-441d-88bc-636463e96f4e&lang=ru_RU"></script>
 </head>
 
 <body class="page__body">
@@ -119,8 +120,8 @@
             <dd class="example__value">60 ДНЕЙ</dd>
           </div>
           <div class="example__item example__item--total">
-            <dt class="example__property example__property--total">Затраты на питание: </dt>
-            <dd class="example__value example__value--total"> 15 000 руб.</dd>
+            <dt class="example__property example__property--total">Затраты на питание:</dt>
+            <dd class="example__value example__value--total">15 000 руб.</dd>
           </div>
         </dl>
         <div class="example__compare-slider compare-slider ">
@@ -148,12 +149,12 @@
         <div class="contacts__info">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8<br>
-            <br class="contacts__empty-line">
+            ул. Большая Конюшенная, д. 19/8
+            <p class="contacts__empty-line"></p>
             Санкт-Петербург
           </address>
         </div>
-        <!-- Потом здесь будет карта -->
+        <div class="contacts__map" id="map"></div>
         <picture>
           <source type="image/png" media="(min-width: 1440px)" width="1440" height="400" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
           <source type="image/png" media="(min-width: 768px)" width="768" height="400" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">

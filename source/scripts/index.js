@@ -24,3 +24,52 @@ const compareSlide = function () {
 };
 
 compareSlider?.addEventListener('input', compareSlide);
+
+// Map
+initMap();
+
+async function initMap() {
+  // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+  await ymaps3.ready;
+
+  const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
+
+
+  // Иницилиазируем карту
+  const map = new YMap(
+    // Передаём ссылку на HTMLElement контейнера
+    document.getElementById('map'),
+
+    // Передаём параметры инициализации карты
+    {
+      location: {
+        // Координаты центра карты
+        center: [30.323037, 59.938631],
+
+        // Уровень масштабирования
+        zoom: 14
+      }
+    }
+  );
+
+  // Добавляем слой для отображения схематической карты
+  map.addChild(new YMapDefaultSchemeLayer());
+
+  // Добавляем слой для отображения маркера
+  map.addChild(new YMapDefaultFeaturesLayer());
+
+  // Создаем и добавляем маркер
+  const markerElement = document.createElement('div');
+  markerElement.className = 'contacts__marker';
+
+  const marker = new YMapMarker(
+    {
+      coordinates: [30.323037, 59.938631],
+      draggable: true,
+      mapFollowsOnDrag: true
+    },
+    markerElement
+  );
+
+  map.addChild(marker);
+}

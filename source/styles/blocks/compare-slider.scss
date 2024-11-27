@@ -41,7 +41,6 @@
 
   background-color: transparent;
   outline: none;
-  color: currentColor;
 
   cursor: pointer;
 
@@ -59,14 +58,6 @@
 
     cursor: col-resize;
     pointer-events: auto;
-
-    &:hover {
-      @include transition;
-    }
-
-    &:active {
-      @include transition;
-    }
   }
 
   &::-webkit-slider-runnable-track {
