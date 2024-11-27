@@ -30,9 +30,10 @@ initMap();
 
 async function initMap() {
   // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-  await ymaps3.ready;
 
-  const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
+  await window.ymaps3.ready;
+
+  const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker} = window.ymaps3;
 
 
   // Иницилиазируем карту
