@@ -53,6 +53,14 @@ async function initMap() {
     }
   );
 
+  // Если ширина окна больше 1439px смещаем центр карты для desktop версии
+  if (window.innerWidth > 1439) {
+    map.setLocation({
+      center: [30.319246, 59.938839],
+      zoom: 16
+    });
+  }
+
   // Добавляем слой для отображения схематической карты
   map.addChild(new YMapDefaultSchemeLayer());
 
