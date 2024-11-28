@@ -1,9 +1,13 @@
 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
   padding-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: $min-width-tablet) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 55px;
@@ -37,7 +41,7 @@
 
 .bottom__img {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 
   @media (min-width: $min-width-tablet) {
     margin: 0;
