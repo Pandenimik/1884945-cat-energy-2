@@ -1,7 +1,11 @@
 
 // Burger nav-menu
-const button = document.querySelector('.burger-toggle');
+const nav = document.querySelector('.main-nav');
 const navList = document.querySelector('.main-nav__list');
+const button = document.querySelector('.burger-toggle');
+nav.classList.remove('main-nav--no-js');
+navList.classList.remove('main-nav__list--no-js');
+button.classList.remove('burger-toggle--no-js');
 navList.classList.toggle('main-nav__list--closed');
 button.classList.toggle('opened-nav');
 const toggleNav = function () {

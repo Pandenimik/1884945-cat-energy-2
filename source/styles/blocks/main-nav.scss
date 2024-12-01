@@ -5,6 +5,13 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (max-width: $max-width-mobile) {
+    &--no-js {
+      width: 100%;
+      padding-top: 15px;
+    }
+  }
+
   @media (min-width: $min-width-tablet) {
     font-size: 18px;
     line-height: 24px;
@@ -44,6 +51,10 @@
     &--closed {
       display: none;
     }
+
+    &--no-js {
+      position: relative;
+    }
   }
 
   @media (min-width: $min-width-tablet) {
@@ -61,8 +72,6 @@
 
 .main-nav__item {
   @media (max-width: $max-width-mobile) {
-    @include container;
-
     border-top: solid 2px $border-color-dark-special-1;
     background-color: $background-color-primary;
   }
