@@ -1,11 +1,12 @@
 .header {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 12px;
   padding-bottom: 15px;
-
-  position: relative;
 
   @media (min-width: $min-width-tablet) {
     padding-top: 25px;

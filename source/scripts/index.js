@@ -74,7 +74,7 @@ async function initMap() {
   const marker = new YMapMarker(
     {
       coordinates: [30.323037, 59.938631],
-      draggable: true,
+      draggable: false,
       mapFollowsOnDrag: true
     },
     markerElement
