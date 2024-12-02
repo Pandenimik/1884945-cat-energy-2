@@ -1,6 +1,12 @@
 .main-card {
   @media (max-width: $max-width-mobile) {
     @include container;
+
+    border-top: solid 1px $border-color-dark-special-3;
+
+    &--special {
+      border-bottom: solid 1px $border-color-dark-special-3;
+    }
   }
 }
 

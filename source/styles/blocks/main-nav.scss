@@ -55,6 +55,9 @@
 
     &--no-js {
       position: relative;
+      width: calc(100% + 2*$padding-x-mobile);
+      margin-left: -$padding-x-mobile;
+      margin-right: -$padding-x-mobile;
     }
   }
 
@@ -76,7 +79,7 @@
     background-color: $background-color-primary;
 
     &:last-of-type {
-      border-bottom: solid 2px $border-color-dark-special-1;
+      border-top: solid 2px $border-color-dark-special-1;
     }
   }
 }
