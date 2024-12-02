@@ -8,6 +8,12 @@
   padding-top: 12px;
   padding-bottom: 15px;
 
+  @media (min-width: $min-width-mobile) {
+    &--no-js {
+      padding-bottom: 0;
+    }
+  }
+
   @media (min-width: $min-width-tablet) {
     padding-top: 25px;
     padding-bottom: 25px;
