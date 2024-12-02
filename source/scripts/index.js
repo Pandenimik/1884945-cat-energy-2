@@ -49,7 +49,7 @@ async function initMap() {
     {
       location: {
         // Координаты центра карты
-        center: [30.323037, 59.938631],
+        center: [30.322910, 59.939141],
 
         // Уровень масштабирования
         zoom: 14
@@ -58,9 +58,16 @@ async function initMap() {
   );
 
   // Если ширина окна больше 1439px смещаем центр карты для desktop версии
+  if (window.innerWidth > 767) {
+    map.setLocation({
+      center: [30.322510, 59.940900],
+      zoom: 14
+    });
+  }
+
   if (window.innerWidth > 1439) {
     map.setLocation({
-      center: [30.319246, 59.938839],
+      center: [30.317800, 59.939030],
       zoom: 16
     });
   }

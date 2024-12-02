@@ -8,7 +8,7 @@
   @media (min-width: $min-width-tablet) {
     position: relative;
 
-    min-height: 875px;
+    min-height: 850px;
     padding: 40px 120px 0;
 
     color: $text-color-dark-primary;
@@ -16,7 +16,7 @@
 
   @media (min-width: $min-width-desktop) {
     min-height: 551px;
-    padding: 110px 720px 110px 190px;
+    padding: 82px 720px 110px 190px;
   }
 }
 
@@ -67,7 +67,8 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    margin-right: 221px;
+    top: 0;
+    margin-right: 330px;
   }
 }
 

@@ -27,7 +27,7 @@
     z-index: 1;
 
     width: 565px;
-    padding: 60px 80px;
+    padding: 62px 70px 62px 80px;
 
     background-color: $background-color-primary;
   }
@@ -103,6 +103,8 @@
   background: center / cover no-repeat image-set(url("../../images/map/map-mobile@1x.png") 1x, url("../../images/map/map-mobile@2x.png") 2x);
 
   @media (min-width: $min-width-tablet) {
+    height: 400px;
+
     background: center / cover no-repeat image-set(url("../../images/map/map-tablet@1x.png") 1x, url("../../images/map/map-tablet@2x.png") 2x);
   }
 

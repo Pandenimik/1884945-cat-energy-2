@@ -4,12 +4,15 @@
 
   @media (min-width: $min-width-tablet) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 63px;
 
     border-bottom: solid 1px $border-color-dark-special-1;
   }
 
   @media (min-width: $min-width-desktop) {
+    padding-top: 36px;
+    padding-bottom: 86px;
+
     border: none;
   }
 }
@@ -24,7 +27,7 @@
   @media (min-width: $min-width-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 60px;
+    gap: 54px 60px;
 
     counter-reset: item 0;
   }
