@@ -1,10 +1,12 @@
 
 // Burger nav-menu
 const header = document.querySelector('.header');
+const headerLogo = document.querySelector('.header__logo--secondary');
 const nav = document.querySelector('.main-nav');
 const navList = document.querySelector('.main-nav__list');
 const button = document.querySelector('.burger-toggle');
 header.classList.remove('header--no-js');
+headerLogo.classList.remove('header__logo--no-js');
 nav.classList.remove('main-nav--no-js');
 navList.classList.remove('main-nav__list--no-js');
 button.classList.remove('burger-toggle--no-js');

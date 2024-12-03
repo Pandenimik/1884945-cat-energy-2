@@ -1,3 +1,15 @@
 .main-cards {
   @include reset-list;
+
+  @media (min-width: $min-width-tablet) {
+    @include container;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    gap: 63px 80px;
+  }
 }
