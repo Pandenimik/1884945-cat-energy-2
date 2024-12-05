@@ -16,6 +16,8 @@
   margin: 0 auto;
   padding: 26px 20px;
 
+  background-color: $background-color-secondary;
+
   @media (min-width: $min-width-tablet) {
     padding: 60px 70px;
   }
@@ -30,6 +32,12 @@
     padding: 62px 70px 62px 80px;
 
     background-color: $background-color-primary;
+  }
+
+  &--index {
+    @media (max-width: $max-width-tablet) {
+      background-color: $background-color-primary;
+    }
   }
 }
 
@@ -83,7 +91,7 @@
 }
 
 .contacts__empty-line {
-  @media (max-width: $max-width-tablet) {
+  @media (max-width: $max-width-mobile) {
     display: none;
   }
 }

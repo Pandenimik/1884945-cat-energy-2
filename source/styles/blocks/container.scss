@@ -17,8 +17,7 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    min-width: $min-width-desktop;
-    max-width: $max-width-desktop;
+    width: $min-width-desktop;
     padding-left: $padding-x-desktop;
     padding-right: $padding-x-desktop;
   }

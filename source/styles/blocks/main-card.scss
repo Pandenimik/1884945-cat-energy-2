@@ -15,14 +15,14 @@
   @media (min-width: $min-width-tablet) {
     display: flex;
     flex-direction: column;
-    max-width: 324px;
+    width: 324px;
     padding: 10px 37px 40px;
 
     background: linear-gradient(to top, $background-color-secondary 430px, $background-color-primary 430px);
   }
 
   @media (min-width: $min-width-desktop) {
-    max-width: 245px;
+    width: 245px;
     padding: 10px 38px 40px;
   }
 }
@@ -118,6 +118,13 @@
   display: block;
   width: 100%;
   height: auto;
+  max-height: 107px;
+
+  object-fit: contain;
+
+  @media (min-width: $min-width-tablet) {
+    max-height: 210px;
+  }
 }
 
 .main-card__title-link {
@@ -160,7 +167,7 @@
     }
   }
 
-  @media (max-width: $max-width-desktop) {
+  @media (min-width: $min-width-desktop) {
     margin: 0 auto 17px;
     padding: 0 10px;
 
@@ -181,7 +188,6 @@
 .main-card__item {
   display: flex;
   justify-content: space-between;
-  align-items: start;
 
   font-family: $font-family-secondary;
   font-size: 12px;
