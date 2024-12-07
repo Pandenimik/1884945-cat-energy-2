@@ -46,47 +46,49 @@
   </header>
 
   <main class="main">
-    <h1 class="page__title container container--form-tablet">Подбор программы</h1>
+    <h1 class="page__title page__title--form container container--form-tablet">Подбор программы</h1>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <p class="form__text container container--form-tablet">
         Заполните анкету, и мы подберем<br>
         программу питания для вашего кота
       </p>
-      <fieldset class="form__fieldset container container--form-tablet">
-        <legend class="form__legend visually-hidden">Данные кота</legend>
-        <label class="form__label" for="cat-name">
-          ИМЯ:*
-          <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-        </label>
-        <label class="form__label" for="cat-weight">
-          Вес (кг):*
-          <input class="form__input" type="number" id="cat-weight" name="cat-weight" value="7">
-        </label>
+      <div class="form__fieldsets-container">
+        <fieldset class="form__fieldset form__fieldset--no-title form__fieldset--customer-data">
+          <legend class="form__legend visually-hidden">Данные кота</legend>
+          <label class="form__label" for="cat-name">
+            ИМЯ:*
+            <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+          </label>
+          <label class="form__label" for="cat-weight">
+            Вес (кг):*
+            <input class="form__input" type="number" id="cat-weight" name="cat-weight" value="7">
+          </label>
 
-        <label class="form__label" for="cat-age">
-          Возраст (лет):
-          <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
-        </label>
-      </fieldset>
+          <label class="form__label" for="cat-age">
+            Возраст (лет):
+            <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
+          </label>
+        </fieldset>
 
-      <fieldset class="form__fieldset container container--form-tablet">
-        <legend class="form__legend visually-hidden">Необходимый результат</legend>
-        <label class="form__label">
-          <input class="radio" type="radio" name="program" id="slim" value="slim" checked>
-          Похудение
-        </label>
-        <label class="form__label">
-          <input class="radio" type="radio" name="program" id="strong" value="strong">
-          Набор массы
-        </label>
-        <label class="form__label">
-          <input class="radio" type="radio" name="program" id="dontknow" value="dontknow">
-          Не знаю (нужен ваш совет)
-        </label>
-      </fieldset>
+        <fieldset class="form__fieldset form__fieldset--no-title form__fieldset--program">
+          <legend class="form__legend visually-hidden">Необходимый результат</legend>
+          <label class="form__label form__label--program">
+            <input class="radio" type="radio" name="program" id="slim" value="slim" checked>
+            Похудение
+          </label>
+          <label class="form__label form__label--program">
+            <input class="radio" type="radio" name="program" id="strong" value="strong">
+            Набор массы
+          </label>
+          <label class="form__label form__label--program">
+            <input class="radio" type="radio" name="program" id="dontknow" value="dontknow">
+            Не знаю (нужен ваш совет)
+          </label>
+        </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset container container--form-tablet">
-        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+      <fieldset class="form__fieldset form__fieldset--accent-title form__fieldset--contacts container container--form-tablet">
+        <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
         <label class="form__label">
           E-mail:*
           <input class="form__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" autocomplete="on" required>
@@ -98,26 +100,26 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset container container--form-tablet">
+      <fieldset class="form__fieldset form__fieldset--accent-title form__fieldset--comment container container--form-tablet">
         <legend class="form__legend">Комментарий</legend>
         <textarea class="form__comment" id="comment" name="comment" rows="5" cols="33" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__fieldset container container--form-tablet">
+      <fieldset class="form__fieldset form__fieldset--accent-title form__fieldset--additionally container container--form-tablet">
         <legend class="form__legend">Дополнительно</legend>
-        <label class="form__label">
+        <label class="form__label form__label--additionally">
           <input class="checkbox" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
           Сахарозаменитель
         </label>
-        <label class="form__label">
+        <label class="form__label form__label--additionally">
           <input class="checkbox" type="checkbox" name="additionally" id="water" value="water">
           Питьевая вода
         </label>
-        <label class="form__label">
+        <label class="form__label form__label--additionally">
           <input class="checkbox" type="checkbox" name="additionally" id="milk" value="milk">
           Молоко
         </label>
-        <label class="form__label">
+        <label class="form__label form__label--additionally">
           <input class="checkbox" type="checkbox" name="additionally" id="vitamins" value="vitamins">
           Витамины
         </label>

@@ -11,6 +11,11 @@
   background-color: $background-color-primary;
   cursor: pointer;
 
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -20,6 +25,8 @@
     width: 0;
     height: 0;
 
+    text-align: center;
+
     background-color: $background-color-accent;
     border-radius: 50%;
   }
@@ -27,6 +34,11 @@
   &:checked::after {
     width: 13px;
     height: 13px;
+
+    @media (min-width: $min-width-tablet) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &:hover {
