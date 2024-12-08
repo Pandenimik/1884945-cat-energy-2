@@ -1,5 +1,27 @@
+.sub-products {
+  @include accent-section;
+
+  padding-bottom: 40px;
+
+  @media (min-width: $min-width-tablet) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
+    padding-bottom: 95px;
+  }
+}
+
 .sub-products__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+  @include accent-section-title;
+
+  margin-bottom: 35px;
+  max-width: 110%;
+
+  @media (min-width: $min-width-tablet) {
+    margin-bottom: 80px;
+  }
 }
