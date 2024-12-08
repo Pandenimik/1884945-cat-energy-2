@@ -196,13 +196,14 @@
   display: flex;
   align-items: center;
   column-gap: 13px;
-  word-break: normal;
 
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $text-color-dark-secondary;
   white-space: nowrap;
+
+  overflow: hidden;
 
   &:has(input:disabled) {
     opacity: 0.3;
