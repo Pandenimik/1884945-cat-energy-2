@@ -1,5 +1,5 @@
 .gift {
-  padding: 187px 60px 40px;
+  padding: 187px 55px 40px;
   width: 100%;
   min-height: 290px;
 
@@ -9,7 +9,7 @@
     image-set(url("../../images/backgrounds/gift-mobile@1x.jpg") 1x, url("../../images/backgrounds/gift-mobile@2x.jpg") 2x) center no-repeat $grey-186rgb;
 
   @media (min-width: $min-width-tablet) {
-    padding: 70px 135px 40px 421px;
+    padding: 70px 120px 40px 421px;
     min-height: 200px;
 
     background:

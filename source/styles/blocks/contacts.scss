@@ -91,6 +91,10 @@
   @media (max-width: $max-width-mobile) {
     display: none;
   }
+
+  @media (min-width: $min-width-tablet) {
+    margin-top: 20px;
+  }
 }
 
 .contacts__img {
