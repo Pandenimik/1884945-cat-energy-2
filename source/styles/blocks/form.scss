@@ -10,6 +10,20 @@
   }
 }
 
+.form__text {
+  margin: 0 auto 32px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $min-width-tablet) {
+    margin: 0 auto 56px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .form__fieldsets-container {
   @media (min-width: $min-width-tablet) {
     @include container;
@@ -147,20 +161,6 @@
       column-gap: 80px;
       padding-bottom: 60px;
     }
-  }
-}
-
-.form__text {
-  margin: 0 auto 32px;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-
-  @media (min-width: $min-width-tablet) {
-    margin: 0 auto 56px;
-
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 
