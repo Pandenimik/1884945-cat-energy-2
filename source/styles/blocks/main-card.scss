@@ -18,7 +18,7 @@
     width: 324px;
     padding: 10px 37px 40px;
 
-    background: linear-gradient(to top, $background-color-secondary 430px, $background-color-primary 430px);
+    background: linear-gradient(to bottom, $background-color-primary 82px, $background-color-secondary 82px);
   }
 
   @media (min-width: $min-width-desktop) {
@@ -40,6 +40,7 @@
   @media (min-width: $min-width-tablet) {
     align-self: end;
     row-gap: 0;
+    margin-top: 82px;
     padding-top: 158px;
 
     background: none;

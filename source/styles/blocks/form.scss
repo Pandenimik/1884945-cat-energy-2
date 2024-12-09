@@ -22,9 +22,11 @@
 
   @media (min-width: $min-width-desktop) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 570px 570px;
     column-gap: 80px;
     margin-bottom: 56px;
+    width: $max-width-desktop;
+    max-width: $max-width-desktop;
   }
 }
 
@@ -269,6 +271,10 @@
   }
 }
 
+.form__input[type="number"] {
+  appearance: textfield;
+}
+
 .form__input[type="email"] {
   padding-right: 45px;
   background-image: url("../../icons/stack.svg#email");
@@ -311,6 +317,8 @@
   border: solid 1px $border-color-dark-special-2;
   border-radius: 0;
 
+  resize: none;
+
   @media (min-width: $min-width-tablet) {
     padding: 11px 10px 11px 20px;
 
@@ -344,6 +352,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     align-items: center;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    column-gap: 80px;
   }
 }
 

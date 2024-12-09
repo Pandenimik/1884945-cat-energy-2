@@ -20,7 +20,10 @@
 }
 
 .programs__item {
+  display: flex;
+  flex-direction: column;
   padding: 30px 20px 22px;
+
   background-color: $background-color-secondary;
   background-repeat: no-repeat;
 
@@ -121,6 +124,7 @@
   display: flex;
   align-items: center;
   column-gap: 15px;
+  margin-top: auto;
 
   font-size: 16px;
   line-height: 16px;

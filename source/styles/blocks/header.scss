@@ -30,6 +30,7 @@
   display: block;
   width: 33px;
   height: 38px;
+  align-self: start;
 
   &:hover {
     @include transition;
@@ -57,6 +58,7 @@
   }
 
   &--secondary {
+    align-self: center;
     width: 101px;
     height: 18px;
     margin-right: 9px;
