@@ -265,6 +265,10 @@
     padding: 13px 11px 12px 14px;
 
     border: solid 2px $border-color-error;
+
+    @media (min-width: $min-width-tablet) {
+      padding: 10px 45px 8px 19px;
+    }
   }
 
   @media (min-width: $min-width-tablet) {
