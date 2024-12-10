@@ -214,12 +214,16 @@
   @media (min-width: $min-width-tablet) {
     font-size: 20px;
     line-height: 20px;
+  }
 
-    &--program {
-      column-gap: 20px;
-    }
+  &--program,
+  &--additionally {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    white-space: normal;
 
-    &--additionally {
+    @media (min-width: $min-width-tablet) {
+      grid-template-columns: 40px 1fr;
       column-gap: 20px;
     }
   }
