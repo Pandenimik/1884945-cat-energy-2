@@ -8,6 +8,12 @@
     color: $compare-slider-button-color-hover;
   }
 
+  &:has(.compare-slider__range:focus) {
+    @include transition;
+
+    color: $compare-slider-button-color-hover;
+  }
+
   &:has(.compare-slider__range:active) {
     @include transition;
 
