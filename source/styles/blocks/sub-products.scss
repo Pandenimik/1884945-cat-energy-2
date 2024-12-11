@@ -1,25 +1,24 @@
 .sub-products {
-  @include accent-section;
+  // @include accent-section;
 
   padding-bottom: 40px;
 
   @media (min-width: $min-width-tablet) {
-    padding-bottom: 75px;
+    padding-bottom: 79px;
   }
 
   @media (min-width: $min-width-desktop) {
     display: grid;
     grid-template-columns: 895px 245px;
     column-gap: 80px;
-    padding-bottom: 95px;
+    padding-bottom: 96px;
   }
 }
 
 .sub-products__title {
-  @include accent-section-title;
+  @include accent-title;
 
-  margin-bottom: 35px;
-  max-width: 110%;
+  margin-bottom: 34px;
 
   @media (min-width: $min-width-tablet) {
     margin-bottom: 80px;
