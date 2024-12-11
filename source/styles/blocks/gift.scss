@@ -6,7 +6,7 @@
   background:
     url("../../icons/stack.svg#gift")  center 59px / 78px 80px no-repeat,
     linear-gradient(to right, rgba($background-color-accent, 0.85), rgba($background-color-accent, 0.85)),
-    image-set(url("../../images/backgrounds/gift-mobile@1x.jpg") 1x, url("../../images/backgrounds/gift-mobile@2x.jpg") 2x) center no-repeat $grey-186rgb;
+    image-set(url("../../images/backgrounds/gift-mobile@1x.jpg") 1x, url("../../images/backgrounds/gift-mobile@2x.jpg") 2x) center no-repeat $background-color-gift-substrate;
 
   @media (min-width: $min-width-tablet) {
     padding: 70px 120px 40px 421px;
@@ -15,7 +15,7 @@
     background:
       url("../../icons/stack.svg#gift")  78px 56px / 80px 83px no-repeat,
       linear-gradient(to right, rgba($background-color-accent, 0.85), rgba($background-color-accent, 0.85)),
-      image-set(url("../../images/backgrounds/gift-tablet@1x.jpg") 1x, url("../../images/backgrounds/gift-tablet@2x.jpg") 2x) center no-repeat $grey-186rgb;
+      image-set(url("../../images/backgrounds/gift-tablet@1x.jpg") 1x, url("../../images/backgrounds/gift-tablet@2x.jpg") 2x) center no-repeat $background-color-gift-substrate;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -25,7 +25,7 @@
     background:
       url("../../icons/stack.svg#gift")  center 57px / 80px 83px no-repeat,
       linear-gradient(to right, rgba($background-color-accent, 0.85), rgba($background-color-accent, 0.85)),
-      image-set(url("../../images/backgrounds/gift-desktop@1x.jpg") 1x, url("../../images/backgrounds/gift-desktop@2x.jpg") 2x) center top no-repeat $grey-186rgb;
+      image-set(url("../../images/backgrounds/gift-desktop@1x.jpg") 1x, url("../../images/backgrounds/gift-desktop@2x.jpg") 2x) center top no-repeat $background-color-gift-substrate;
   }
 }
 
