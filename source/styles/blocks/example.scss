@@ -136,7 +136,7 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(16px);
 
   max-width: 95%;
   padding: 0 15px;
@@ -150,6 +150,8 @@
   background-color: $background-color-special;
 
   @media (min-width: $min-width-tablet) {
+    transform: translateX(-50%) translateY(7px);
+
     width: max-content;
     padding: 0 8px 0 10px;
 

@@ -54,7 +54,7 @@
     counter-increment: item;
 
     @media (min-width: $min-width-desktop) {
-      padding: 40px 25px 40px 0;
+      padding: 40px 0;
     }
   }
 
@@ -132,6 +132,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-color-dark-secondary;
+  text-wrap: pretty;
 
   @media (min-width: $min-width-tablet) {
     font-size: 16px;
