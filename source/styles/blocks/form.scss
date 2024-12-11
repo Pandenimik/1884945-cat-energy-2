@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 80px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     width: $max-width-desktop;
     max-width: $max-width-desktop;
   }
@@ -68,12 +68,6 @@
     }
   }
 
-  &--accent-title {
-    position: relative;
-    border-top: solid 2px $border-color-accent;
-  }
-
-  // Дальше модификаторы индивидуальных свойств каждого филдсета отдельно
   &--customer-data {
     padding-bottom: 21px;
 
@@ -89,13 +83,13 @@
   }
 
   &--program {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding-top: 22px;
     padding-bottom: 20px;
 
     @media (min-width: $min-width-tablet) {
       row-gap: 13px;
-      margin-bottom: 71px;
+      margin-bottom: 66px;
       padding-top: 23px;
       padding-left: 24px;
       padding-bottom: 25px;
@@ -113,46 +107,46 @@
   }
 
   &--contacts {
-    margin-bottom: 15px;
-    padding-top: 44px;
+    margin-bottom: 13px;
+    padding-top: 35px;
 
     @media (min-width: $min-width-tablet) {
-      margin-bottom: 60px;
-      padding-top: 71px;
+      margin-bottom: 55px;
+      padding-top: 76px;
     }
 
     @media (min-width: $min-width-desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
-      margin-bottom: 63px;
+      margin-bottom: 60px;
     }
   }
 
   &--comment {
-    margin-bottom: 18px;
-    padding-top: 35px;
+    margin-bottom: 13px;
+    padding-top: 38px;
 
     @media (min-width: $min-width-tablet) {
-      margin-bottom: 61px;
-      padding-top: 82px;
+      margin-bottom: 56px;
+      padding-top: 87px;
     }
 
     @media (min-width: $min-width-desktop) {
-      margin-bottom: 66px;
-      padding-top: 74px;
+      margin-bottom: 62px;
+      padding-top: 77px;
     }
   }
 
   &--additionally {
-    padding-top: 32px;
+    padding-top: 35px;
     padding-bottom: 34px;
 
     @media (min-width: $min-width-tablet) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 32px 60px;
-      padding-top: 51px;
+      padding-top: 57px;
       padding-bottom: 52px;
     }
 
@@ -165,29 +159,24 @@
 }
 
 .form__legend {
-  position: relative;
-  top: -4px;
+  @include accent-title(24, 36, 36);
 
-  margin: 0 -20px;
-  padding: 0 20px;
-
-  font-size: 24px;
   line-height: 26px;
 
-  //Многострочный <legend> не реагирует на fit-content, inline-block и прочее.
-  // Для pixel perfect зададим max-width для мобильной версии.
-  @media (max-width: $max-width-mobile) {
-    max-width: 80%;
+  &::before {
+    top: calc((24 / 2) + 3);
 
-    &--contacts {
-      position: relative;
-      top: 9px;
+    @media (min-width: $min-width-tablet) {
+      top: calc((36 / 2) + 4);
+    }
+
+    @media (min-width: $min-width-desktop) {
+      top: calc((36 / 2) + 4);
     }
   }
 
   @media (min-width: $min-width-tablet) {
     margin: 0 -40px;
-    padding: 0 40px;
 
     font-size: 36px;
     line-height: 36px;
