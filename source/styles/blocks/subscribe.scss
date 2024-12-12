@@ -36,11 +36,10 @@
 }
 
 .subscribe__form {
-  padding: 22px 0 40px;
-
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding: 22px 0 40px;
 
   @media (min-width: $min-width-tablet) {
     display: grid;
