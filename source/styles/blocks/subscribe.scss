@@ -63,9 +63,27 @@
   color: $text-color-dark-secondary;
 
   border: solid 1px $border-color-dark-primary;
+  border-radius: 0;
 
   &::placeholder {
     color: $text-color-dark-secondary;
+  }
+
+  &:hover {
+    border: solid 1px $border-color-dark-primary;
+  }
+
+  &:focus-visible {
+    padding: 12px;
+
+    border: solid 2px $border-color-dark-focus;
+    outline: none;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    padding: 12px;
+
+    border: solid 2px $border-color-error;
   }
 }
 
