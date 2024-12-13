@@ -94,6 +94,24 @@
 .main-card__picture-link {
   display: block;
 
+  &:hover {
+    @include transition;
+
+    opacity: 0.6;
+  }
+
+  &:focus {
+    @include transition;
+
+    opacity: 0.6;
+  }
+
+  &:active {
+    @include transition;
+
+    opacity: 0.3;
+  }
+
   @media (max-width: $max-width-mobile) {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
@@ -130,6 +148,24 @@
 
 .main-card__title-link {
   @include reset-link;
+
+  &:hover {
+    @include transition;
+
+    opacity: 0.6;
+  }
+
+  &:focus {
+    @include transition;
+
+    opacity: 0.6;
+  }
+
+  &:active {
+    @include transition;
+
+    opacity: 0.3;
+  }
 }
 
 .main-card__title {
